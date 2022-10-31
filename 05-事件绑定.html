@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery3.6.1.js"></script>
+</head>
+<body>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+
+    <script>
+        //  $('button').click(function(){
+        //        $(this).css('color','red')
+        //  })
+
+
+        //  jQuery 中的排他思想  隐式迭代
+
+        $('button').click(function(){
+            //    $(this).siblings().css('backgroundColor','')
+
+               //链式编程
+               $(this).css('backgroundColor','pink').siblings().css('backgroundColor','')
+
+
+        })
+
+
+
+
+    </script>
+</body>
+</html>
